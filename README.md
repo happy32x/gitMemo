@@ -20,13 +20,13 @@ git revert SHADuCommit 		: sélectionne un commit, crée son inverse,
 git commit --amend -m "comment" : modifie le commentaire du dernier commit
 git reset --hard                : annule toutes les modifs du commit en cours avant commit
 
-git clone <gitHubRepositoryLink.git> : télécharge un nouveau repository
+git clone <gitHubRepositoryLink.git> : télécharge un nouveau repository depuis github
+git remote add origin <gitHubRepositoryLink.git> : upload un nouveau repository vers gitHub 
 
-git push   : envoi les nouveaux commit au serveur
-git pull   : télécharge les nouveaux commit depuis serveur
+git push -u origin master : envoi les nouveaux commit au serveur
+git pull -u origin master : télécharge les nouveaux commit depuis serveur
+
 git branch : affiche liste des branches
-git remote : <pas encore utilisé>
-
 
 BASH
 ----
@@ -45,4 +45,5 @@ VIM
 :w save
 :s quit
 :x save && quit
+
 
