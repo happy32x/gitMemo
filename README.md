@@ -5,9 +5,9 @@ GIT
 ---
 git init : transforme un dossier en repository (création de l'index .git)
 git add  : ajoute un element à l'index (.git)
-git commit -m # 
-|| git commit -a -m # 
-|| git commit -am # > # = "comment" : effectue un commit
+git commit -m <comment> : effectue un commit 
+|| git commit -a -m <comment>
+|| git commit -am <comment>
 
 git status : affiche l'etat du commit
 git log    : affiche l'historique des commit
@@ -27,6 +27,9 @@ git push -u origin master : envoi les nouveaux commit au serveur
 git pull -u origin master : télécharge les nouveaux commit depuis serveur
 
 git branch : affiche liste des branches
+|| git branch <branch> : créer une branche
+|| git checkout <branch> : se positionne sur une branche
+|| git checkout -b <branch> : créer, puis se positionner sur une branche
 
 BASH
 ----
@@ -42,6 +45,8 @@ shift + insert : coller
 
 VIM
 ---
+i = edit
+esc = saisir les commandes vim
 :w save
 :s quit
 :x save && quit
